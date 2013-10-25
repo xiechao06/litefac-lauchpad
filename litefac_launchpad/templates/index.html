@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>LiteFac首页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ url_for('static', filename='js/html5shiv.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/respond.min.js') }}"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/customer.css') }}" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">LiteFac</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#about">成功案例</a></li>
+                <li><a href="#ceo_talks">CEO寄语</a></li>
+                <li><a href="#prices">价格</a></li>
+                <li><a href="#more_products">许愿墙</a></li>
+                <li><a href="#more_products">更多产品</a></li>
+                <li><a href="#contact">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>通过LiteFac, 轻松洞悉自己的工厂!</h1>
+        <p class="lead">
+        N家加工业工厂正在与我们一起积极改进LiteFac, 期待您的参与!
+        </p>
+        <p>
+          <a class="btn btn-lg btn-success" href="#">开始您45天的免费试用!</a>
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <h2>一周就用起来</h2>
+          <p>
+          我们自己就是LiteFac的用户, 这里没有故作高深的术语, 我们更深知最佳实践方案<strong>必须适应您实际的生产状况</strong>
+          </p>
+          <p><strong>实践证明, 客户掌握LiteFac的平均时间是一周</strong></p>
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>看到正在发生的</h2>
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>回答您关心的数字</h2>
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>手机用用也不错</h2>
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>您可以绝对放心</h2>
+          <ul class='list-unstyled'>
+            <li>您可以免费试用45天</li>
+            <li>付费后30天内可以无条件退款</li>
+            <li>终身免费升级</li>
+          </ul>
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>您只挑选您需要的</h2>
+          <p>LiteFac的功能很丰富, 但<strong>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong>立即融合到您现有的系统中!</strong></p>
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>更有专有服务!</h2>
+          <p>也许您不放心将数据放在网络上, 我们可以为您部署专有的硬件, 更妙的是, 之前在网络上的数据<strong>也会安全转移到您的专有服务中, 而这一切会在瞬间发生!</strong>
+          </p>
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <h2>我们倾听您的声音!</h2>
+          <p>
+          我们最大的愿望是您能成功应用LiteFac, 虽然LiteFac还很年轻, 可能暂时无法满足您现有的需求, 但是LiteFac正在蓬勃成长. </p>
+          <p><strong>如果您有任何无法满足的需求, 恳请<a href="#">告诉我们</a>, 让我们有机会仍然为您提供服务!</strong></p>
+          <p><a class="btn btn-default" href="#">查看详情 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2013 LiteFac, Inc. &middot; <a href="#">隐私</a> &middot; <a href="#">条款</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/holder.js') }}"></script>
+  </body>
+</html>
+
