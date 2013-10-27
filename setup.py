@@ -4,8 +4,8 @@ from setuptools.command.test import test as TestCommand
 import sys
 
 PACKAGE = "litefac_launchpad"
-NAME = "litefac-lauchpad"
-DESCRIPTION = "Lauchpad for litefac"
+NAME = "litefac-launchpad"
+DESCRIPTION = "Launchpad for litefac"
 AUTHOR = "XieChao"
 AUTHOR_EMAIL = "xiechao06@gmail.com"
 URL = "xiechao06.github.com"

@@ -65,10 +65,18 @@ body {
   padding-right: 15px;
 }
 
+.marketing img {
+    width: 196px;
+    height: 196px;
+}
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-3 {
   text-align: center;
   margin-bottom: 20px;
+}
+.jumbotron h1 {
+    color: black;
 }
 .marketing h2 {
   font-weight: normal;
@@ -128,8 +136,25 @@ body {
 
 }
 
+.feature-img {
+    width:196px; 
+    height: 196px; 
+    margin-left:auto; 
+    margin-right: auto;
+}
+
+.feature-img > .overlay {
+    position:absolute;
+    z-index:9999;
+    color:white;
+    width: 48px;
+    height: 48px;
+}
+
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
 }
+
+
