@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="{{ url_for("static", filename='images/favicon.png') }}">
 
     <title>LiteFac欢迎您！</title>
 
@@ -34,7 +34,8 @@
         <h1>LiteFac, 专为制造业工厂定制!</h1>
         <img class='img-rounded' src="{{ url_for('static', filename='images/banner.svg') }}" alt="Generic placeholder image">
         <p>
-          <a class="btn btn-lg btn-success" href="#">在线演示</a>
+        <a class="btn btn-lg btn-success" href="{{ demo_url }}" target='_blank'>在线演示</a>
+        <small class='text-muted'><em>完整试用请下载<a href="">手机客户端</a></em></small>
         </p>
       </div>
     </div>
@@ -51,33 +52,38 @@
         <div class="col-lg-3">
           <img class='img-rounded' src="{{ url_for('static', filename='images/abc.svg') }}" alt="Generic placeholder image">
           <h2>简单易用</h2>
-          <p>没有故作高深的术语, 只提供适应您实际生产状况的解决方案。</p>
+          <p>和别的厂家不同, 我们专门为您的工厂进行开发定制, 只提供适应实际生产状况的解决方案。</p>
         </div>
         
         <div class="col-lg-3">
-          <a class="fancybox" href="{{ url_for('static', filename='images/abc.svg') }}" rel="group">
+          <a class="fancybox" href="{{ url_for('static', filename='images/order_bird_view.png') }}" rel="group" title='订单视图'>
             <div class='feature-img' >
               <img src="{{ url_for('static', filename='images/2-action-search.png') }}" alt="" class='overlay'/>
-              <img class="img-rounded" src="data:image/png;base64," data-src="holder.js/196x196" alt="Generic placeholder image">
+              <img class="img-rounded" src="{{ url_for('static', filename='images/order_bird_view.png') }}" alt="Generic placeholder image">
             </div>
           </a>
           <h2>看到正在发生的</h2>
           <p>动态展示最核心复杂的流程</p>
         </div>
         <div class="col-lg-3">
-          <a class="fancybox" href="{{ url_for('static', filename='images/abc.svg') }}" rel="group">
+          <a class="fancybox" href="{{ url_for('static', filename='images/production_overview.png') }}" rel="group" title='订单视图'>
             <div class='feature-img' >
               <img src="{{ url_for('static', filename='images/2-action-search.png') }}" alt="" class='overlay'/>
-              <img class="img-rounded" src="data:image/png;base64," data-src="holder.js/196x196" alt="Generic placeholder image">
+              <img class="img-rounded" src="{{ url_for('static', filename='images/production_overview.png') }}" alt="Generic placeholder image">
             </div>
           </a>
           <h2>回答您关心的数字</h2>
-          <p>您可以定制您需要的数据报表，更可以按时发送到您的邮箱</p>
+          <p>您也许对某些数据感到困惑,LiteFac会告诉您精确的数值,更可以按时发送到您的邮箱</p>
         </div>
         <div class="col-lg-3">
-          <img class='img-thumbnail' src="{{ url_for('static', filename='images/use_phone.svg') }}" alt="Generic placeholder image">
+          <a class="fancybox" href="{{ url_for('static', filename='images/use_phone.png') }}" rel="group" title='原生应用和手机浏览效果'>
+            <div class='feature-img' >
+              <img src="{{ url_for('static', filename='images/2-action-search.png') }}" alt="" class='overlay'/>
+              <img class="img-rounded" src="{{ url_for('static', filename='images/use_phone.png') }}" alt="Generic placeholder image">
+            </div>
+          </a>
           <h2>手机用用也不错</h2>
-          <p>所有页面都针对手机适配，并为装卸货物, 操作工单等应用场景提供原生应用</p>
+          <p>所有页面都针对手机适配，并为装卸货物, 操作工单应用场景提供原生应用以加快操作速度</p>
         </div>
       </div>
 

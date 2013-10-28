@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
@@ -137,6 +136,7 @@ body {
 }
 
 .feature-img {
+    position:relative;
     width:196px; 
     height: 196px; 
     margin-left:auto; 
@@ -144,11 +144,12 @@ body {
 }
 
 .feature-img > .overlay {
-    position:absolute;
-    z-index:9999;
-    color:white;
+    position: absolute;
+    z-index: 1;
+    color: white;
     width: 48px;
     height: 48px;
+    right: 0;
 }
 
 @media (min-width: 992px) {

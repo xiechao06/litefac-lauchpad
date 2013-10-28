@@ -74,8 +74,8 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="769"
+     inkscape:window-width="1680"
+     inkscape:window-height="1021"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -104,7 +104,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,-142.73908,-34.953707)" />
     <path
        sodipodi:type="arc"
@@ -114,7 +114,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,20.325239,-34.953707)" />
     <path
        sodipodi:type="arc"
@@ -124,7 +124,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,183.38956,-34.953707)" />
     <path
        sodipodi:type="arc"
@@ -134,7 +134,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,346.45392,-34.953707)" />
     <path
        sodipodi:type="arc"
@@ -144,7 +144,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,509.51824,-34.953707)" />
     <path
        sodipodi:type="arc"
@@ -154,7 +154,7 @@
        sodipodi:cy="51.396767"
        sodipodi:rx="51.26524"
        sodipodi:ry="47.140453"
-       d="m 226.27417,51.396767 a 51.26524,47.140453 0 1 1 -102.53048,0 51.26524,47.140453 0 1 1 102.53048,0 z"
+       d="m 226.27417,51.396767 c 0,26.034953 -22.95223,47.140453 -51.26524,47.140453 -28.31301,0 -51.26524,-21.1055 -51.26524,-47.140453 0,-26.034954 22.95223,-47.1404537 51.26524,-47.1404537 28.31301,0 51.26524,21.1054997 51.26524,47.1404537 z"
        transform="matrix(1.2484093,0,0,1.357645,672.58258,-34.953707)" />
   </g>
   <g
@@ -341,13 +341,13 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="548.15118"
+       x="384.3381"
        y="5.4269562"
        id="text4273-7-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4275-6-8"
-         x="548.15118"
+         x="384.3381"
          y="5.4269562">调度</tspan></text>
     <text
        xml:space="preserve"
@@ -374,14 +374,14 @@
     <text
        xml:space="preserve"
        style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="385.26614"
-       y="5.2511749"
+       x="544.36511"
+       y="4.0726638"
        id="text4273-7-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4275-6-0"
-         x="385.26614"
-         y="5.2511749">生产</tspan></text>
+         x="544.36511"
+         y="4.0726638">生产</tspan></text>
     <rect
        style="fill:#006699;fill-opacity:0.8;stroke:#006699;stroke-width:0;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect4215-3"
