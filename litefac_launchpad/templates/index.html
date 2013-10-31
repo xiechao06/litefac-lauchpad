@@ -12,8 +12,6 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/normalize.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='fancybox/jquery.fancybox.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,10 +49,11 @@
       <div class="row">
         <div class="col-lg-3">
           <img class='img-rounded' src="{{ url_for('static', filename='images/abc.png') }}" alt="Generic placeholder image">
-          <h2>简单易用</h2>
-          <p>和别的厂家不同, 我们专门为您的工厂进行开发定制, 只提供适应实际生产状况的解决方案。</p>
+          <h2>轻松上手</h2>
+          <p>我们专门为您的工厂进行开发定制, 只提供适应实际生产状况的<strong>清晰简单</strong>的解决方案。我们的经验证明: </p>
+          <p><strong>在一周以内， 您就可以将LiteFac应用起来</strong></p>
         </div>
-        
+
         <div class="col-lg-3">
           <a class="fancybox" href="{{ url_for('static', filename='images/order_bird_view.png') }}" rel="group" title='订单视图'>
             <div class='feature-img' >
@@ -62,9 +61,10 @@
               <img class="img-rounded" src="{{ url_for('static', filename='images/order_bird_view.png') }}" alt="Generic placeholder image">
             </div>
           </a>
-          <h2>看到正在发生的</h2>
-          <p>动态展示最核心复杂的流程</p>
+          <h2>全流程管控</h2>
+          <p>您也许已经购买了一些管理软件，但您是否觉得无法将数据整合起来，从而无法形成信息链？LiteFac的出发点就是帮助您真正洞悉自己的工厂。更妙的是，LiteFac尽可能以图形化的形式呈现给您</p> 
         </div>
+        
         <div class="col-lg-3">
           <a class="fancybox" href="{{ url_for('static', filename='images/production_overview.png') }}" rel="group" title='订单视图'>
             <div class='feature-img' >
@@ -73,8 +73,9 @@
             </div>
           </a>
           <h2>回答您关心的数字</h2>
-          <p>您也许对某些数据感到困惑,LiteFac会告诉您精确的数值,更可以按时发送到您的邮箱</p>
+          <p>您也许对某些数据感到困惑,LiteFac会对这些数据进行统计， 告诉您精确的数值,更可以按时发送到您的邮箱</p>
         </div>
+
         <div class="col-lg-3">
           <a class="fancybox" href="{{ url_for('static', filename='images/use_phone.png') }}" rel="group" title='原生应用和手机浏览效果'>
             <div class='feature-img' >
@@ -85,6 +86,39 @@
           <h2>手机用用也不错</h2>
           <p>所有页面都针对手机适配，并为装卸货物, 操作工单应用场景提供原生应用以加快操作速度</p>
         </div>
+      </div>
+
+      <div class='row'>
+        <div class="col-lg-3">
+          <img class='img-rounded' src="{{ url_for('static', filename='images/guarantee.png') }}" alt="Generic placeholder image">
+          <h2>请您绝对放心</h2>
+          <ul class='list-unstyled'>
+            <li>您可以免费试用45天</li>
+            <li>付费后30天内可以无条件退款</li>
+            <li>终身免费升级</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <img class='img-rounded' src="{{ url_for('static', filename='images/as_your_need.png') }}" alt="Generic placeholder image">
+          <h2>您只挑选您需要的</h2>
+          <p>LiteFac的功能很丰富, 但<strong>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong>立即融合到您现有的系统中!</strong></p>
+        </div>
+
+        <div class="col-lg-3">
+          <img class='img-rounded' src="{{ url_for('static', filename='images/local_service.png') }}" alt="Generic placeholder image">
+          <h2>更有专有服务!</h2>
+          <p>也许您不放心将数据放在网络上, 我们可以为您部署专有的硬件, 更妙的是, 之前在网络上的数据<strong>也会安全转移到您的专有服务中, 而这一切会在瞬间发生!</strong>
+          </p>
+        </div>
+
+        <div class="col-lg-3 last-manifest">
+          <h2>我们倾听您的声音!</h2>
+          <p>
+          LiteFac还很年轻, 可能暂时无法满足您现有的需求, 但是LiteFac正在蓬勃成长. </p>
+          <p><strong>如果您有任何无法满足的需求, 恳请<a href="#">告诉我们</a>, 让我们有机会仍然为您提供服务!</strong></p>
+        <a class="btn btn-lg btn-success" href="{{ demo_url }}" target='_blank'>申请试用</a>
+        </div><!-- /.col-lg-4 -->
       </div>
 
       <!-- FOOTER -->

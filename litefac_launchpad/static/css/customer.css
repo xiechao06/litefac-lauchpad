@@ -156,6 +156,14 @@ body {
     right: 0;
 }
 
+.last-manifest {
+    margin-top: 10px;
+}
+
+.last-manifest h2 {
+    color: #339900;
+}
+
 
 @media (min-width: 992px) {
   .featurette-heading {
