@@ -14,7 +14,10 @@
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="favicon.svg">
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/xc/work/litefac-launchpad-env/litefac-launchpad/litefac_launchpad/static/images/favicon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs2987" />
   <sodipodi:namedview
@@ -25,7 +28,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.4748737"
-     inkscape:cx="-28.049021"
+     inkscape:cx="-94.71909"
      inkscape:cy="8.4242636"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -54,7 +57,7 @@
      inkscape:groupmode="layer">
     <path
        sodipodi:type="arc"
-       style="fill:#003399;fill-opacity:0.94117647;stroke-width:1.49881887000000003;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.90000000000000002"
+       style="fill:#3399ff;fill-opacity:1;stroke-width:1.49881887000000003;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.90000000000000002"
        id="path2993"
        sodipodi:cx="13.428572"
        sodipodi:cy="17.785715"
