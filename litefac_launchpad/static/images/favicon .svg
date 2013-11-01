@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="favicon .svg"
+   inkscape:export-filename="/home/xc/work/litefac-launchpad-env/litefac-launchpad/litefac_launchpad/static/images/favicon2.png"
+   inkscape:export-xdpi="120"
+   inkscape:export-ydpi="120">
+  <defs
+     id="defs2987" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.4748737"
+     inkscape:cx="-94.71909"
+     inkscape:cy="8.4242636"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,16)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#3399ff;fill-opacity:1;stroke-width:1.49881887000000003;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.90000000000000002"
+       id="path2993"
+       sodipodi:cx="13.428572"
+       sodipodi:cy="17.785715"
+       sodipodi:rx="9.3300829"
+       sodipodi:ry="16.642857"
+       d="m 22.758655,17.785715 c 0,9.191596 -4.177221,16.642857 -9.330083,16.642857 -5.1528628,0 -9.3300832,-7.451261 -9.3300832,-16.642857 0,-9.1915958 4.1772204,-16.6428565 9.3300832,-16.6428565 5.152862,0 9.330083,7.4512607 9.330083,16.6428565 z"
+       transform="matrix(2.5723244,0,0,1.4420601,-2.5426428,-9.6480696)"
+       inkscape:export-filename="/home/xc/work/litefac-launchpad-env/litefac-launchpad/litefac_launchpad/static/images/favicon2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:47.99488449px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="19.100761"
+       y="27.572929"
+       id="text2995"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96682924,1.0343088)"><tspan
+         sodipodi:role="line"
+         id="tspan2997"
+         x="19.100761"
+         y="27.572929">L</tspan></text>
+  </g>
+</svg>

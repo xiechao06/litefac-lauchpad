@@ -1,0 +1,93 @@
+{% extends "base_layout.html" %}
+
+{% block body %}
+<div class="container">
+  <div class='row'>
+    <span class="col-lg-1 navbar-brand">LiteFac</span>
+    <!--<p class="lead col-lg-1 brand">LiteFac</p>-->
+    <ul class="nav nav-tabs col-offset-1">
+      <li class="active"><a href="#">创建申请</a></li>
+      <li><a href="{{ url_for('applications_view') }}">已申请客户</a></li>
+    </ul>
+  </div>
+
+  <h2>创建试用申请</h2>
+  <p class='text-primary'>
+    您留下联系方式后，我们会尽快联系您，因为我们必须轮流处理您的申请，可能需要您的耐心等待。 非常感谢！
+  </p>
+  <hr />
+
+  
+  <form class="form-horizontal" role="form" method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group">
+      <div class="col-lg-3">
+        <input class="form-control" id="contact" placeholder="联系方式" name='contact' value="{{ form.contact.data or "" }}"
+        {% if not errors or 'contact' in errors %}autofocus='true'{% endif %}>
+      </div>
+      <p {% if 'contact' in errors %}class="text-danger"{% endif %}>
+        - {{ form.contact.validators[0].message }}
+      </p>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-3">
+        <input class="form-control" id="company_name" placeholder="公司名称" name='company_name' value='{{ form.company_name.data or ""}}'>
+      </div>
+      <p {% if 'company_name' in errors %}class="text-danger"{% endif %}>
+        - 必填项
+      </p>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-3">
+        <input class="form-control" id="email" placeholder="电子邮箱" name='email' 
+        value='{{ form.email.data or "" }}' >
+      </div>
+      {% if 'email' in errors %}
+        <p class="text-danger">
+          - {{ errors.email[0] }} 
+        </p>
+      {% else %}
+        <p>
+          - 非必填项
+        </p>
+      {% endif %}
+    </div>
+    <div class="form-group">
+      <div class="col-lg-4">
+        <button type="submit" class="btn btn-success btn-lg">提交</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-3">
+        <label>
+          <input type="checkbox" name="tob"><p>Check me out</p>
+        </label>
+      </div>
+    </div>
+  </form>
+  <hr />
+
+  <!-- FOOTER -->
+  <footer>
+  <p>&copy; 2013 杭州朴正软件技术有限公司. </p>
+  </footer>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(function () {
+      $('input[name="contact"]').focus().blur(function () {
+        var contact = $.trim($(this).val());
+        if (contact != '') {
+          $.getJSON(
+            '/locale?contact=' + contact,
+            function (data) {
+              $('input[name="company_name"]').val(data['City']+'市');
+            });
+          }
+        });
+      });
+</script>
+{% endblock %}
