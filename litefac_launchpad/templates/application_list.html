@@ -1,43 +1,45 @@
 {% extends "base_layout.html" %}
+{% from  "macros.html" import nav_bar %}
 
 {% block body %}
 <div class="container">
-  <div class='row'>
-    <span class="col-lg-1 navbar-brand">LiteFac</span>
-    <!--<p class="lead col-lg-1 brand">LiteFac</p>-->
-    <ul class="nav nav-tabs col-offset-1">
-      <li><a href="/application">创建申请</a></li>
-      <li class="active"><a href="#">已申请客户</a></li>
-    </ul>
-  </div>
-
+  {{ nav_bar(1, total_application_cnt) }}
   <h2>
     已申请用户列表
   </h2>
 
-  <hr />
-  
-
   <table class="table table-striped table-condensed">
     <thead>
       <tr>
-        <td>联系方式</td>
-        <td>客户名称</td>
-        <td>申请时间</td>
+        <th>联系电话</th>
+        <th>客户名称</th>
+        <th>联系人</th>
+        <th>申请时间</th>
       </tr>
     </thead>
     <tbody>
+      {% for app in applications %}
       <tr>
-      	<td>0571-xxxx1345</td>
-      	<td>杭州xxxxxx</td>
-      	<td>2013-2-13</td>
+        <td>{{ app.contact }}</td>
+        <td>{{ app.company_name }}</td>
+        <td>{{ app.linkman }}</td>
+        <td>{{ app.create_time }}</td>
       </tr> 
+      {% endfor %}
     </tbody>
   </table>
 
   <ul class="pager col-offset-2">
-    <li class="previous"><a href="#">&larr; 向前</a></li>
-    <li class="next"><a href="#">向后 &rarr;</a></li>
+    <li class="previous {% if page <= 0 %}disabled{% endif %}">
+      <a {% if page > 0 %}href="{{ url_for('applications_view', page=page-1) }}"{% endif %}>
+        &larr; 向前
+      </a>
+    </li>
+    <li class="next {% if page >= total_page_cnt - 1 %}disabled{% endif %}">
+      <a {% if page < total_page_cnt - 1 %}href="{{ url_for('applications_view', page=page+1) }}"{% endif %}>
+        向后 &rarr;
+      </a>
+    </li>
   </ul>
 </div>
 {% endblock %}

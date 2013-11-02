@@ -1,0 +1,37 @@
+{% extends "base_layout.html" %}
+{% from  "macros.html" import nav_bar %}
+
+{% block body %}
+<div class="container">
+  {{ nav_bar(0, total_application_cnt) }}
+
+  <h3 class='text-success'>您已经成功创建了试用申请!</h3>
+  <p>
+    您可以在<a href="{{ url_for('applications_view') }}">已申请客户</a>中看到您的申请, 我们会尽快和您联系！
+  </p>
+  <div class="row">
+    <div class="col-lg-6 application-detail">
+      <table class='table table-striped'>
+        <tr>
+          <th>联系电话</th>
+          <td>{{ application.contact }}</td>
+        </tr>
+        <tr>
+          <th>公司名称</th>
+          <td>{{ application.company_name }}</td>
+        </tr>
+        <tr>
+          <th>联系人</th>
+          <td>{{ application.linkman }}</td>
+        </tr>
+        <tr>
+          <th>电子邮箱</th>
+          <td>{{ application.email or '--' }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div>
+    <a href="{{ url_for('index') }}" class='btn btn-info'>返回首页</a>
+  </div>
+{% endblock %}

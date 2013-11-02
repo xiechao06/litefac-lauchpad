@@ -185,13 +185,16 @@ form .form-group input[type='checkbox']  {
     display: none;
 }
 
-.navbar-brand {
-    padding: 10px 10px;
-}
-
-
 .pager {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.application-detail {
+    margin-top: 20px;
+}
+
+body {
+    padding-top: 60px;
 }
