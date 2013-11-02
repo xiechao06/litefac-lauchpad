@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+import os
 import re
 import urllib
 
@@ -16,6 +17,8 @@ from litefac_launchpad.constants import PAGE_SIZE
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object("litefac_launchpad.default_settings")
+if os.path.exists('config.py'):
+    app.config.from_pyfile("config.py")
 CsrfProtect(app)
 db = SQLAlchemy(app)
 
