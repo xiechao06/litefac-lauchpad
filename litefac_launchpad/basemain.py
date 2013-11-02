@@ -18,7 +18,7 @@ from litefac_launchpad.constants import PAGE_SIZE
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object("litefac_launchpad.default_settings")
 if os.path.exists('config.py'):
-    app.config.from_pyfile("config.py")
+    app.config.from_pyfile(os.path.join(os.path.getcwd(), "config.py"))
 CsrfProtect(app)
 db = SQLAlchemy(app)
 
