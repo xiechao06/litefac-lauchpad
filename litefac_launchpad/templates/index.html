@@ -106,11 +106,6 @@
 
 </div><!-- /.container -->
 
-<script type="text/javascript">
-  $(document).ready(function() {
-      $(".fancybox").fancybox();
-      });
-</script>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -158,4 +153,12 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+{% endblock %}
+
+{% block foot_block  %}
+<script type="text/javascript">
+  $(document).ready(function() {
+      $(".fancybox").fancybox();
+      });
+</script>
 {% endblock %}
