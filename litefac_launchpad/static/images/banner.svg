@@ -15,7 +15,10 @@
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="banner.svg">
+   sodipodi:docname="banner.svg"
+   inkscape:export-filename="/home/xc/work/litefac-launchpad-env/litefac-launchpad/litefac_launchpad/static/images/banner.png"
+   inkscape:export-xdpi="60.1875"
+   inkscape:export-ydpi="60.1875">
   <defs
      id="defs2987">
     <linearGradient
@@ -87,6 +90,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

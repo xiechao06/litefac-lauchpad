@@ -1,12 +1,14 @@
 {% extends "base_layout.html" %}
 
+{% block head_block %}
+<style type="text/css">
+  body {
+    padding-top: 0px;
+  }
+</style>
+{% endblock %}
+
 {% block body %}
-<div class="jumbotron">
-  <div class="container">
-    <h1>LiteFac, 专为制造业工厂定制!</h1>
-    <img class='img-rounded' src="{{ url_for('static', filename='images/banner.png') }}" alt="Generic placeholder image">
-  </div>
-</div>
 
 
 <!-- Marketing messaging and featurettes
@@ -15,8 +17,33 @@
 
 <div class="container marketing">
 
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-lg-3">
+        <p><strong>作为企业的领导者，您是否为下述问题困扰?</strong></p>
+        <ul class="list-unstyled">
+          <li>- 订单来了，不能及时组织生产</li>
+          <li>- 订单来了，经常按错误的工艺生产</li>
+          <li>- 总是为某个班组的工作量纠缠不清</li>
+          <li>- 没有及时发出货物，甚至发错了</li>
+          <li>- 打好几个电话才搞清楚生产进度</li>
+          <li>- 总是把精力耗费在无穷的琐事上</li>
+          <li>- ......</li>
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <h1 class='hidden-xs hidden-small'>LiteFac, 专为制造业工厂定制!</h1>
+        <h3 class='text-success visible-xs'><strong>LiteFac, 专为制造业工厂定制!</strong></h3>
+        <img class='img-rounded visible-xs' src="{{ url_for('static', filename='images/banner_mob.png') }}" alt="Generic placeholder image">
+        <img class='img-rounded hidden-xs hidden-small' src="{{ url_for('static', filename='images/banner.png') }}" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+
   <!-- Three columns of text below the carousel -->
   <div class="row">
+    <hr class="visible-xs" />
+    
     <div class="col-lg-3">
       <img class='img-rounded' src="{{ url_for('static', filename='images/abc.png') }}" alt="Generic placeholder image">
       <h2>轻松上手</h2>
@@ -24,6 +51,7 @@
       <p><strong class='text-danger'>在一周以内， 您就可以将LiteFac应用起来</strong></p>
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <a class="fancybox" href="{{ url_for('static', filename='images/order_bird_view.png') }}" rel="group" title='订单视图'>
         <div class='feature-img' >
@@ -35,6 +63,7 @@
       <p>随着工厂规模的扩大， 您也许已经购买了一些管理软件，但仍然总觉得无法<strong class='text-danger'>将各个生产环节串接形成信息链？</strong>LiteFac的出发点就是帮助您真正洞悉自己的工厂。更妙的是，LiteFac尽可能以图形化的形式呈现给您</p> 
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <a class="fancybox" href="{{ url_for('static', filename='images/production_overview.png') }}" rel="group" title='产量报表'>
         <div class='feature-img' >
@@ -46,6 +75,7 @@
       <p>您也许对某些数据感到困惑,LiteFac会对这些数据进行统计， 告诉您精确的数值,更可以按时发送到您的邮箱</p>
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <a class="fancybox" href="{{ url_for('static', filename='images/use_phone.png') }}" rel="group" title='原生应用和手机浏览效果'>
         <div class='feature-img' >
@@ -59,6 +89,7 @@
   </div>
 
   <div class='row'>
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <img class='img-rounded' src="{{ url_for('static', filename='images/guarantee.png') }}" alt="Generic placeholder image">
       <h2>请您绝对放心</h2>
@@ -69,12 +100,14 @@
       </ul>
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <img class='img-rounded' src="{{ url_for('static', filename='images/as_your_need.png') }}" alt="Generic placeholder image">
       <h2>您只挑选您需要的</h2>
       <p>LiteFac的功能很丰富, 但<strong class='text-danger'>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong class='text-danger'>立即融合到您现有的系统中!</strong></p>
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3">
       <img class='img-rounded' src="{{ url_for('static', filename='images/local_service.png') }}" alt="Generic placeholder image">
       <h2>更有专有服务!</h2>
@@ -82,6 +115,7 @@
       </p>
     </div>
 
+    <hr class="visible-xs" />
     <div class="col-lg-3 last-manifest">
       <h2>我们倾听您的声音!</h2>
       <p>
@@ -101,7 +135,7 @@
   
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2013 杭州朴正软件技术有限公司. </p>
+  <p><strong>&copy; 2013 杭州朴正软件技术有限公司, 电话: 0571-86711510; 手机: 18658168578(谢先生)。 </strong></p>
   </footer>
 
 </div><!-- /.container -->

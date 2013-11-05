@@ -4,7 +4,7 @@ import os
 import re
 import urllib
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, g
 from flask.ext.wtf import Form, CsrfProtect
 from wtforms import TextField, BooleanField, ValidationError
 from wtforms.validators import DataRequired, Regexp, Email
@@ -22,9 +22,12 @@ if os.path.exists('config.py'):
 CsrfProtect(app)
 db = SQLAlchemy(app)
 
-from litefac_launchpad.utilities import do_commit
+from litefac_launchpad.utilities import do_commit, request_from_mobile
 from litefac_launchpad import models
 
+@app.before_request
+def test_request_type():
+    g.request_from_mobile = request_from_mobile()
 
 @app.route('/')
 def index():
