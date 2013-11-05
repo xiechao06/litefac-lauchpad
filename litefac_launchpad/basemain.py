@@ -25,9 +25,11 @@ db = SQLAlchemy(app)
 from litefac_launchpad.utilities import do_commit, request_from_mobile
 from litefac_launchpad import models
 
+
 @app.before_request
 def test_request_type():
     g.request_from_mobile = request_from_mobile()
+
 
 @app.route('/')
 def index():
@@ -136,3 +138,8 @@ def locale():
         d = dict(zip(('Province', 'City'), ret.split()))
         ret = jsonify(d)
     return ret
+
+
+@app.route('/questions')
+def questions():
+    return render_template('questions.html')
