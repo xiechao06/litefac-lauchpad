@@ -127,10 +127,9 @@ body {
     font-weight: normal;
 }
 
-.marketing .col-lg-3 p,ul {
+.marketing .col-lg-6 ul {
     font-size: 1.5em;
 }
-
 
 /* Featurettes
 ------------------------- */
