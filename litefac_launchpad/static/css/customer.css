@@ -3,30 +3,43 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  color: #5a5a5a;
+    color: #5a5a5a;
+    font-family:'Microsoft Yahei', 'Microsoft Jhenghei', STHeiti, PMingLiU, Simsun;
 }
 
 .jumbotron {
-  background-color: transparent;
-  padding: 0px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-.jumbotron .col-lg-3 {
-    background-color: #eee;
-    padding-top: 10px;
+.jumbotron .col-lg-12 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.jumbotron ul, .jumbotron p {
+.jumbotron p {
+    font-size: 1.5em; 
     text-align: left;
-    line-height: 20px;
+}
+
+.jumbotron img {
+    width: 100%;
 }
 
 .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+    font-size: 32px;
+}
+
+.last-manifest .col-lg-6:last-child {
+    padding: 64px;
+}
+
+.last-manifest {
+    background-color: #eee;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -34,8 +47,25 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: relative;
-  z-index: 15;
+    position: relative;
+    z-index: 15;
+}
+
+
+.feature-text {
+    padding: 32px;
+    background-color: #e5f3ff;
+    height: 340px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.last-manifest .feature-text {
+    background-color: transparent;
+}
+
+.feature-text p {
+    font-size: 21px;
 }
 
 
@@ -44,27 +74,27 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 
-  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  margin-top: -90px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    margin-top: -90px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  z-index: 10;
+    z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
-  background-color: #777;
+    height: 500px;
+    background-color: #777;
 }
 .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
 }
 
 
@@ -74,24 +104,18 @@ body {
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.marketing img {
-    width: 196px;
-    height: 196px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .marketing .jumbotron img {
-    width: 100%;
-    height: auto;
+    height: 100%;
 }
+
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-3 {
-  text-align: center;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .jumbotron h1 {
@@ -100,11 +124,11 @@ body {
     height: 100%;
 }
 .marketing h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 .marketing .col-lg-3 p,ul {
-  margin-left: 10px;
-  margin-right: 10px;
+    font-size: 1.5em;
 }
 
 
@@ -112,14 +136,14 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 
@@ -129,46 +153,58 @@ body {
 
 @media (min-width: 768px) {
 
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
+    .featurette-heading {
+        font-size: 50px;
+    }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+
     .jumbotron {
         margin-top: 0px;
     }
+
+    .last-manifest .col-lg-6:last-child {
+        padding-top: 16px;
+    }
+    
 }
 
 .feature-img {
     position:relative;
-    width:196px; 
-    height: 196px; 
+    height: 320px;
+    width: auto;
     margin-left:auto; 
     margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.feature-img img {
+    height: 100%;
 }
 
 .modal-body table {
@@ -180,14 +216,9 @@ body {
     z-index: 10;
     width: 48px;
     height: 48px;
-    top:0;
-    right: 0;
+    top:auto;
+    right: auto;
     color: gray;
-    /*color: #00ffff;*/
-}
-
-.last-manifest {
-    margin-top: 10px;
 }
 
 .last-manifest h2 {
@@ -196,9 +227,9 @@ body {
 
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
+    .featurette-heading {
+        margin-top: 120px;
+    }
 }
 
 .form-group p {

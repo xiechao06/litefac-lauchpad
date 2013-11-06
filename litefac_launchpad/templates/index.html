@@ -19,117 +19,165 @@
 
   <div class="jumbotron">
     <div class="row">
-      <div class="col-lg-3">
-        <p><strong>作为企业的领导者，您是否为下述问题困扰?</strong></p>
-        <ul class="list-unstyled">
-          <li>- 订单来了，不能及时组织生产</li>
-          <li>- 订单来了，按错误的工艺生产</li>
-          <li>- 总是为某个班组的工作量纠缠不清</li>
-          <li>- 没有及时发出货物，甚至发错了</li>
-          <li>- 打好几个电话才搞清楚生产进度</li>
-          <li>- 经常对生产效率等数据一头雾水</li>
-          <li>- 总是把精力耗费在无穷的琐事上</li>
-          <li>- <a href="{{ url_for('questions') }}">更多&hellip;&hellip;</a></li>
-        </ul>
+      <div class="col-lg-12">
+        <p><em>作为企业的领导者，您是否将大量精力耗费在：</em></p>
+        <p><em>生产的太多或太少; 货物发送不及时，甚至发送错误; 打好几个电话才能查清一笔订单的生产进度&hellip;&hellip; </em><a href="{{ url_for('questions') }}">查看更多</a></p>
       </div>
-      <div class="col-lg-9">
-        <h1 class='hidden-xs hidden-small'>LiteFac, 专为制造业工厂定制!</h1>
-        <h3 class='text-success visible-xs'><strong>LiteFac, 专为制造业工厂定制!</strong></h3>
-        <img class='img-rounded visible-xs' src="{{ url_for('static', filename='images/banner_mob.png') }}" alt="Generic placeholder image">
-        <img class='img-rounded hidden-xs hidden-small' src="{{ url_for('static', filename='images/banner.png') }}" alt="Generic placeholder image">
+    </div>
+    <div class="row">
+      <h1 class='visible-lg'>LiteFac, 专为制造业工厂定制!</h1>
+      <h2 class='text-success hidden-lg'><strong>LiteFac, 专为制造业工厂定制!</strong></h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <img class='img-rounded hidden-lg' src="{{ url_for('static', filename='images/banner_mob.png') }}" alt="Generic placeholder image">
+        <img class='img-rounded visible-lg' src="{{ url_for('static', filename='images/banner.png') }}" alt="Generic placeholder image">
       </div>
     </div>
   </div>
 
-  <!-- Three columns of text below the carousel -->
   <div class="row">
-    <hr class="visible-xs" />
-    
-    <div class="col-lg-3">
-      <img class='img-rounded' src="{{ url_for('static', filename='images/abc.png') }}" alt="Generic placeholder image">
-      <h2>轻松上手</h2>
-      <p>我们专门为您的工厂进行开发定制, 只提供适应实际生产状况的<strong>清晰简单</strong>的解决方案。我们的经验证明: </p>
-      <p><strong class='text-danger'>在一周以内， 您就可以将LiteFac应用起来</strong></p>
+    <div class="col-lg-6 text-center">
+      <img class='img-rounded feature-img' src="{{ url_for('static', filename='images/abc.png') }}" alt="Generic placeholder image">
     </div>
+    <div class="col-lg-6">
+      <div class="feature-text">
+        <h2><strong>轻松上手</strong></h2>
+        <p class='text-muted'>专门为您的工厂定制, 提供适应实际状况的解决方案。根据我们的经验: </p>
+        <p><strong class='text-danger text-muted'>在一周以内， 您就可以将LiteFac应用起来</strong></p>
+      </div>
+    </div>
+  </div>
 
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
+  <div class="row">
+    <div class="col-lg-6 visible-lg">
+      <div class="feature-text">
+        <h2><strong>全流程管控</strong></h2>
+        <p class='text-muted'>随着工厂规模的扩大， 您是否总觉得<strong class='text-danger'>各个生产环节之间存在信息的错误，丢失和延误？</strong>LiteFac的出发点就是帮助您真正洞悉自己的工厂。更妙的是，LiteFac尽可能以图形化的形式呈现给您</p>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center">
       <a class="fancybox" href="{{ url_for('static', filename='images/order_bird_view.png') }}" rel="group" title='订单视图'>
         <div class='feature-img' >
           <img class="img-rounded" src="{{ url_for('static', filename='images/order_bird_view.png') }}" alt="Generic placeholder image">
           <i class="fa fa-search-plus fa-2x overlay"></i>
         </div>
       </a>
-      <h2>全流程管控</h2>
-      <p>随着工厂规模的扩大， 您也许已经购买了一些管理软件，但仍然总觉得无法<strong class='text-danger'>将各个生产环节串接形成信息链？</strong>LiteFac的出发点就是帮助您真正洞悉自己的工厂。更妙的是，LiteFac尽可能以图形化的形式呈现给您</p> 
     </div>
+    <div class="col-lg-6 hidden-lg">
+      <div class="feature-text">
+        <h2><strong>全流程管控</strong></h2>
+        <p class='text-muted'>随着工厂规模的扩大， 您是否总觉得<strong class='text-danger'>各个生产环节之间存在信息的错误，丢失和延误？</strong>LiteFac的出发点就是帮助您真正洞悉自己的工厂。更妙的是，LiteFac尽可能以图形化的形式呈现给您</p>
+      </div>
+    </div>
+  </div>
 
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
+  <div class="row">
+    <div class="col-lg-6 text-center">
       <a class="fancybox" href="{{ url_for('static', filename='images/production_overview.png') }}" rel="group" title='产量报表'>
         <div class='feature-img' >
           <img class="img-rounded" src="{{ url_for('static', filename='images/production_overview.png') }}" alt="Generic placeholder image">
           <i class="fa fa-search-plus fa-2x overlay"></i>
         </div>
       </a>
-      <h2>回答您关心的数字</h2>
-      <p>您也许对某些数据感到困惑,LiteFac会对这些数据进行统计， 告诉您精确的数值,更可以按时发送到您的邮箱</p>
     </div>
+    <div class="col-lg-6">
+      <div class="feature-text">
+        <h2><strong>回答您关心的数字</strong></h2>
+        <p class='text-muted'>您也许对某些数据感到困惑,LiteFac会对这些数据进行统计， 告诉您精确的数值,更可以按时发送到您的邮箱</p>
+      </div>
+    </div>
+  </div>
 
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
+  <div class="row">
+    <div class="col-lg-6 visible-lg">
+      <div class="feature-text">
+        <h2><strong>手机用用也不错</strong></h2>
+        <p class='text-muted'>所有页面都针对手机适配，并为装卸货物, 操作工单应用场景提供原生应用以加快操作速度。对于管理人员，在厂外也可以时刻掌握动态。欢迎您用手机访问我们的网站!</p>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center">
       <a class="fancybox" href="{{ url_for('static', filename='images/use_phone.png') }}" rel="group" title='原生应用和手机浏览效果'>
         <div class='feature-img' >
           <img class="img-rounded" src="{{ url_for('static', filename='images/use_phone.png') }}" alt="Generic placeholder image">
           <i class="fa fa-search-plus fa-2x overlay"></i>
         </div>
       </a>
-      <h2>手机用用也不错</h2>
-      <p>所有页面都针对手机适配，并为装卸货物, 操作工单应用场景提供原生应用以加快操作速度。对于管理人员，在厂外也可以时刻掌握动态。欢迎您用手机访问我们的网站!</p>
+    </div>
+    <div class="col-lg-6 hidden-lg">
+      <div class="feature-text">
+        <h2><strong>手机用用也不错</strong></h2>
+        <p class='text-muted'>所有页面都针对手机适配，并为装卸货物, 操作工单应用场景提供原生应用以加快操作速度。对于管理人员，在厂外也可以时刻掌握动态。欢迎您用手机访问我们的网站!</p>
+      </div>
     </div>
   </div>
 
-  <div class='row'>
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
-      <img class='img-rounded' src="{{ url_for('static', filename='images/guarantee.png') }}" alt="Generic placeholder image">
-      <h2>请您绝对放心</h2>
-      <ul class='list-unstyled'>
-        <li>您可以免费试用45天</li>
-        <li>付费后30天内可以无条件退款</li>
-        <li>终身免费升级</li>
-      </ul>
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      <img class='img-rounded feature-img' src="{{ url_for('static', filename='images/guarantee.png') }}" alt="Generic placeholder image">
     </div>
-
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
-      <img class='img-rounded' src="{{ url_for('static', filename='images/as_your_need.png') }}" alt="Generic placeholder image">
-      <h2>您只挑选您需要的</h2>
-      <p>LiteFac的功能很丰富, 但<strong class='text-danger'>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong class='text-danger'>立即融合到您现有的系统中!</strong></p>
+    <div class="col-lg-6">
+      <div class="feature-text">
+        <h2><strong>请您绝对放心使用</strong></h2>
+        <ul class='list-unstyled text-muted'>
+          <li>您可以免费试用45天</li>
+          <li>付费后30天内可以无条件退款</li>
+          <li>终身免费升级</li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <hr class="visible-xs" />
-    <div class="col-lg-3">
-      <img class='img-rounded' src="{{ url_for('static', filename='images/local_service.png') }}" alt="Generic placeholder image">
-      <h2>更有专有服务!</h2>
-      <p>也许您不放心将数据放在网络上, 我们可以为您部署专有的硬件, 更妙的是, 之前在网络上的数据<strong class='text-danger'>也会安全转移到您的专有服务中, 而这一切会在瞬间发生!</strong>
+  <div class="row">
+    <div class="col-lg-6 visible-lg">
+      <div class="feature-text">
+        <h2><strong>您只挑选您需要的</strong></h2>
+        <p class='text-muted'>LiteFac的功能很丰富, 但<strong class='text-danger'>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong class='text-danger'>立即融合到您现有的系统中!</strong></p>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center">
+      <img class='img-rounded feature-img' src="{{ url_for('static', filename='images/as_your_need.png') }}" alt="Generic placeholder image">
+    </div>
+    <div class="col-lg-6 hidden-lg">
+      <div class="feature-text">
+        <h2><strong>您只挑选您需要的</strong></h2>
+        <p class='text-muted'>LiteFac的功能很丰富, 但<strong class='text-danger'>您可以只选择必要的功能模块</strong>, 更妙的是, 您随时可以选择更多的功能模块, 大多数情况下, 它们可以<strong class='text-danger'>立即融合到您现有的系统中!</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      <img class='img-rounded feature-img' src="{{ url_for('static', filename='images/local_service.png') }}" alt="Generic placeholder image">
+    </div>
+    <div class="col-lg-6">
+      <div class="feature-text">
+        <h2><strong>更有专有服务!</strong></h2>
+        <p class='text-muted'>也许您不放心将数据放在网络上, 我们可以为您部署专有的硬件, 更妙的是, 之前在网络上的数据<strong class='text-danger'>也会安全转移到您的专有服务中, 而这一切会在瞬间发生!</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="row last-manifest">
+    <div class="col-lg-6">
+      <div class="feature-text">
+        <h2><strong>我们倾听您的声音!</strong></h2>
+        <p>
+        LiteFac还很年轻, 可能暂时无法满足您现有的需求, 但是LiteFac正在蓬勃成长. </p>
+        <p><strong>如果您有任何无法满足的需求, 恳请<a href="#">告诉我们</a>, 让我们有机会仍然为您提供服务!</strong></p>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center">
+      <p>
+        <a class="btn btn-lg btn-success" href="{{ url_for('application_view') }}" target='_blank'>申请试用</a>
+      </p>
+      <p>
+        <a class="btn btn-lg btn-success" href="{{ demo_url }}" target='_blank'>在线演示</a>
+      </p>
+      <p>
+        <small class='text-muted'><em>完整演示请下载<a data-toggle="modal" href="#myModal">手机客户端</a></em></small>
       </p>
     </div>
-
-    <hr class="visible-xs" />
-    <div class="col-lg-3 last-manifest">
-      <h2>我们倾听您的声音!</h2>
-      <p>
-      LiteFac还很年轻, 可能暂时无法满足您现有的需求, 但是LiteFac正在蓬勃成长. </p>
-      <p><strong>如果您有任何无法满足的需求, 恳请<a href="#">告诉我们</a>, 让我们有机会仍然为您提供服务!</strong></p>
-      <p>
-      <a class="btn btn-lg btn-success" href="{{ url_for('application_view') }}" target='_blank'>申请试用</a>
-      </p>
-      <p>
-      <a class="btn btn-lg btn-success" href="{{ demo_url }}" target='_blank'>在线演示</a>
-      </p>
-      <small class='text-muted'><em>完整演示请下载<a data-toggle="modal" href="#myModal">手机客户端</a></em></small>
-    </div><!-- /.col-lg-4 -->
   </div>
 
   <hr />
