@@ -9,3 +9,4 @@ wsgiref==0.1.2
 Flask-SQLAlchemy==1.0
 Flask-WTF==0.9.3
 pyquery==1.2.6
+unicorn
