@@ -1,6 +1,6 @@
 DEBUG = True
-DEMO_URL = 'http://127.0.0.1:5000'
-CLIENT_DOWNLOAD_URL = 'http://www.litefac.com/assets/litefac.apk'
+DEMO_URL = 'http://42.121.6.193:8001/'
+CLIENT_DOWNLOAD_URL = 'http://www.litefac.com/static/assets/litefac.apk'
 
 SECRET_KEY = 'ooghisei'
 CSRF_SECRET_KEY = SECRET_KEY
